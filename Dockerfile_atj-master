@@ -1,0 +1,7 @@
+FROM 127.0.0.1:10000/nginx:stable-alpine
+
+ARG DIST_PATH
+
+COPY dist/ /root/dist
+
+COPY nginx_atj.conf /etc/nginx/nginx.conf
